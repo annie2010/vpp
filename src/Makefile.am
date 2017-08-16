@@ -20,6 +20,7 @@ ACLOCAL_AMFLAGS = -I m4
 AM_LIBTOOLFLAGS = --quiet
 
 AM_CFLAGS = -Wall
+AM_CXXFLAGS = -Wall -std=gnu++11
 
 SUBDIRS = .
 SUFFIXES = .api.h .api .api.json
@@ -68,6 +69,7 @@ include vnet.am
 include vpp.am
 include vpp-api-test.am
 include uri.am
+include object-model.am
 
 SUBDIRS += plugins
 

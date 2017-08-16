@@ -1,0 +1,63 @@
+# Copyright (c) 2016 Cisco and/or its affiliates.
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at:
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+lib_LTLIBRARIES += libobject_model.la
+
+libobject_model_la_SOURCES =			\
+	object-model/acl_binding_cmds.cpp	\
+	object-model/acl_binding.cpp		\
+	object-model/acl_l2_rule.cpp		\
+	object-model/acl_l3_rule.cpp		\
+	object-model/acl_list_cmds.cpp		\
+	object-model/acl_list.cpp		\
+	object-model/acl_types.cpp		\
+	object-model/arp_proxy_binding_cmds.cpp \
+	object-model/arp_proxy_binding.cpp	\
+	object-model/arp_proxy_config_cmds.cpp	\
+	object-model/arp_proxy_config.cpp	\
+	object-model/bridge_domain_cmds.cpp	\
+	object-model/bridge_domain.cpp		\
+	object-model/client_db.cpp		\
+	object-model/cmd.cpp			\
+	object-model/connection.cpp		\
+	object-model/dhcp_config_cmds.cpp	\
+	object-model/dhcp_config.cpp		\
+	object-model/hw.cpp			\
+	object-model/inspect.cpp		\
+	object-model/interface_cmds.cpp		\
+	object-model/interface.cpp		\
+	object-model/interface_factory.cpp	\
+	object-model/interface_types.cpp	\
+	object-model/ip_unnumbered_cmds.cpp	\
+	object-model/ip_unnumbered.cpp		\
+	object-model/l2_binding_cmds.cpp	\
+	object-model/l2_binding.cpp		\
+	object-model/l3_binding_cmds.cpp	\
+	object-model/l3_binding.cpp		\
+	object-model/lldp_binding_cmds.cpp	\
+	object-model/lldp_binding.cpp		\
+	object-model/lldp_global_cmds.cpp	\
+	object-model/lldp_global.cpp		\
+	object-model/logger.cpp			\
+	object-model/object_base.cpp		\
+	object-model/om.cpp			\
+	object-model/route.cpp			\
+	object-model/route_domain.cpp		\
+	object-model/sub_interface_cmds.cpp	\
+	object-model/sub_interface.cpp		\
+	object-model/tap_interface.cpp		\
+	object-model/types.cpp			\
+	object-model/vxlan_tunnel_cmds.cpp 	\
+	object-model/vxlan_tunnel.cpp
+
+# vi:syntax=automake
